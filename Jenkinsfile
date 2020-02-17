@@ -3,12 +3,12 @@ pipeline {
         docker { image "devops/node-wd" }        
     }
     stages {
-        stage('Build'){
+        stage('Build') {
             steps {
-                sh"npm install"
+                sh "npm install"
             }            
         }
-        stage('Testes'){
+        stage('Tests'){
             steps {
                 sh "npm run test:ci"
             }            
