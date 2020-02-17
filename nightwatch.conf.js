@@ -37,14 +37,14 @@ module.exports = {
                 waitForConditionTimeout: defautTimeout // As vezes a conexão com a internet fica lenta
             },
             webdriver: {
-                server_path: '.\\node_modules\\.bin\\geckodriver.cmd',
-                port: 4444
+                server_path: chromedriver.path,
+                port: 9515
             },
             desiredCapabilities: {
-                browserName: "firefox",
+                browserName: "chrome",
                 chromeOptions: {
                     w3c: false,
-                    args: ['--headless', '--no-sandbox']
+                    args: ['--headless', '--no-sandbox', '--disable-dev-shm-usage']
                 }
             }
         },
