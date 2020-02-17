@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image "lidi/node-wd" }        
+        docker { image "devops/node-wd" }        
     }
     stages {
         stage('Build'){
