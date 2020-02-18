@@ -4,7 +4,7 @@ const chromedriver = require('chromedriver');
 require('geckodriver')
 
 const testUrl = "http://zombie-web:5000"
-const defautTimeout = 15000
+const defaultTimeout = 15000
 
 module.exports = {
     src_folders: ['tests'], 
