@@ -1,14 +1,13 @@
+
 module.exports = {
     '@tags': ['smoke'],
-
     'login com sucesso': (browser) => {
-
         let login = browser.page.login()
-        let sideBar = browser.page.sideBar()
+        let sidebar = browser.page.sidebar()
 
         login.with('zumbi@dospalmares.com.br', 'pwd123')
-        sideBar.expectLoggedUser('Quilombo')
-    }    
+        sidebar.expectLoggedUser('Quilombo')
+    }
 }
 
     // 'login com sucesso': function (browser) {

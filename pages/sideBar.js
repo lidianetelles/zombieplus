@@ -1,3 +1,4 @@
+
 var userActions = {
     expectLoggedUser: function (name) {
         return this
@@ -5,7 +6,6 @@ var userActions = {
             .assert.containsText('@userInfo', name)
     }
 }
-
 module.exports = {
     commands: [userActions],
     elements: {
