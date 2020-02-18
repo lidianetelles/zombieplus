@@ -19,7 +19,7 @@ module.exports = {
         default:{
             launch_url: testUrl,
             globals: {
-                waitForConditionTimeout: defautTimeout // As vezes a conexão com a internet fica lenta
+                waitForConditionTimeout: defaultTimeout // As vezes a conexão com a internet fica lenta
             },
             webdriver: {
                 server_path: chromedriver.path,
@@ -34,7 +34,7 @@ module.exports = {
         headless: {
             launch_url: testUrl,
             globals: {
-                waitForConditionTimeout: defautTimeout // As vezes a conexão com a internet fica lenta
+                waitForConditionTimeout: defaultTimeout // As vezes a conexão com a internet fica lenta
             },
             webdriver: {
                 server_path: chromedriver.path,
@@ -52,7 +52,7 @@ module.exports = {
         firefox: {
             launch_url: testUrl,
             globals: {
-                waitForConditionTimeout: defautTimeout // As vezes a conexão com a internet fica lenta
+                waitForConditionTimeout: defaultTimeout // As vezes a conexão com a internet fica lenta
             },
             webdriver: {
                 server_path: '.\\node_modules\\.bin\\geckodriver.cmd',
